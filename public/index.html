@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="timer">02:00</div>
+        <div id="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="question">Loading question...</div>
+        <div class="answers" id="answers"></div>
+        <button onclick="submitAnswer()">Prześlij odpowiedź</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            fetchQuestions();
+        };
+    </script>
+</body>
+</html>
